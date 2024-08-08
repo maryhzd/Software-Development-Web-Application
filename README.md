@@ -10,17 +10,6 @@ This is a simple To-Do List web application built with Flask, SQLAlchemy, and Fl
 - Simple and clean user interface
 
 ## Project Structure
-todo_app/
-├── app.py
-├── models.py
-├── forms.py
-├── templates/
-│ ├── base.html
-│ ├── index.html
-│ └── update.html
-└── static/
-└── style.css
-
 
 - `app.py`: Main application file that contains the Flask routes and application logic.
 - `models.py`: Contains the SQLAlchemy models for the application.
