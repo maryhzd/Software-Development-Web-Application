@@ -21,7 +21,7 @@ form {
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;  /* Keep form inline */
+    display: inline-block;
 }
 
 form div {
@@ -38,6 +38,8 @@ li {
     margin: 10px 0;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;  /* Use flexbox to align buttons */
+    align-items: center;
 }
 
 a, button {
@@ -52,7 +54,8 @@ a, button {
     display: inline-block;
     text-align: center;
     font-size: 14px;
-    width: 100px;  /* Set a fixed width for buttons */
+    min-width: 80px;
+    flex-shrink: 0;  /* Prevent buttons from shrinking */
 }
 
 a:hover, button:hover {
