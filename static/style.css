@@ -1,14 +1,19 @@
+/* Font Family */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
+/* Container Styling */
 .container {
-    width: 50%;
-    margin: auto;
-    overflow: hidden;
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -28,6 +33,7 @@ form div {
     margin-bottom: 10px;
 }
 
+/* List and List Item Styling */
 ul {
     list-style: none;
     padding: 0;
@@ -42,29 +48,50 @@ li {
     align-items: center;
 }
 
+/* Button and Link Styling */
 a, button {
     margin-left: 10px;
     padding: 10px;
-    text-decoration: none;
-    background: #007BFF;
+    background: linear-gradient(to right, #007BFF, #0056b3);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     display: inline-block;
     text-align: center;
     font-size: 14px;
     min-width: 80px;
     flex-shrink: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 a:hover, button:hover {
-    background: #0056b3;
+    background: linear-gradient(to right, #0056b3, #003f7f);
+    transform: translateY(-3px);
 }
 
-a, button {
-    background-color: #007BFF;
-    box-shadow: none;  /* Ensure no shadow behind buttons */
+/* Input and Textarea Styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
 
 
