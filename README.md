@@ -25,8 +25,8 @@ This is a simple To-Do List web application built with Flask, SQLAlchemy, and Fl
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/todo_app.git
-    cd todo_app
+    git clone https://github.com/maryhzd/Software-Development-Web-Application.git
+    cd Software-Development-Web-Application
     ```
 
 2. Create a virtual environment and activate it:
@@ -46,6 +46,7 @@ This is a simple To-Do List web application built with Flask, SQLAlchemy, and Fl
     ```
 
 5. Open your web browser and go to `http://127.0.0.1:5000/` to see the application.
+
 
 ## Usage
 
