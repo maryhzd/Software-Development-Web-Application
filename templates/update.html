@@ -12,6 +12,10 @@
         {{ form.description(size=64) }}
     </div>
     <div>
+        {{ form.priority.label }}<br>
+        {{ form.priority() }}
+    </div>
+    <div>
         {{ form.submit() }}
     </div>
 </form>

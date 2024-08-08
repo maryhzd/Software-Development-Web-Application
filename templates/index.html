@@ -12,6 +12,10 @@
         {{ form.description(size=64) }}
     </div>
     <div>
+        {{ form.priority.label }}<br>
+        {{ form.priority() }}
+    </div>
+    <div>
         {{ form.submit() }}
     </div>
 </form>
@@ -19,7 +23,7 @@
 <ul>
     {% for todo in todos %}
     <li>
-        <strong>{{ todo.title }}</strong>: {{ todo.description }}
+        <strong>{{ todo.title }}</strong>: {{ todo.description }} (Priority: {{ todo.priority }})
         <a href="{{ url_for('update', todo_id=todo.id) }}">Update</a>
         <form action="{{ url_for('delete', todo_id=todo.id) }}" method="POST" style="display:inline;">
             <button type="submit">Delete</button>
